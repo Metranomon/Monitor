@@ -20,7 +20,7 @@ public class Main {
 		f.colore="Rosso";
 		
 		m2.colore="Verde";
-		m2.pollici=24;
+		//m2.pollici=24;
 		m2.accendi();
 		m2.riduciLuminosità();
 		
@@ -35,22 +35,10 @@ public class Main {
 		//operazioni del monitor
 		do {
 			System.out.println("\n\n\n\n\n\n\n\n\nQuesto è il monitor m1:");
-			System.out.println("Colore: "+m1.colore);
-			System.out.println("Pollici: "+m1.pollici);
-			if (m1.stato==true)
-				System.out.println("Stato: acceso");
-			else
-				System.out.println("Stato: spento");
-			System.out.println("Luminosità: "+m1.luminosità);
+			m1.mostraDati();
 			
 			System.out.println("\n\nQuesto è il monitor m2:");
-			System.out.println("Colore: "+m2.colore);
-			System.out.println("Pollici: "+m2.pollici);
-			if (m2.stato==true)
-				System.out.println("Stato: acceso");
-			else
-				System.out.println("Stato: spento");
-			System.out.println("Luminosità: "+m2.luminosità);
+			m2.mostraDati();
 			
 			
 			System.out.println("Cosa vuoi fare con il monitor (accendi/spegni/aumenta luminosità/diminuisci luminosità/esci)?");
